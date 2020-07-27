@@ -1,0 +1,64 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.3.1",
+    "cross-env": "^5.1",
+    "jquery": "^3.2",
+    "laravel-mix": "^4.0.16",
+    "lodash": "^4.17.11",
+    "popper.js": "^1.12",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.21.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "css-loader": "^2.1.1",
+    "glamor": "^2.20.40",
+    "jwt-decode": "^2.2.0",
+    "path-to-regexp": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "react-jw-player": "^1.19.0",
+    "react-loading-screen": "0.0.17",
+    "react-router-dom": "^5.0.1",
+    "react-top-loading-bar": "^1.0.6"
+  },
+  "browser": {
+    "child_process": false
+  },
+  "name": "tiktok",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phutruongck/tiktok.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phutruongck/tiktok/issues"
+  },
+  "homepage": "https://github.com/phutruongck/tiktok#readme",
+  "description": ""
+}
